@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://kit.fontawesome.com/ddd466807d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="">
+            <div class="h_1">
+                <img src="../static/images/Spotify_Logo.png" alt="">
+            </div>
+        </a>
+        <a href="#">
+            <div class="h_2">
+                <div class="profile"><img src="{{pro_pic}}" alt=""></div>
+                <h3>{{user}}</h3>
+            </div>
+        </a>
+    </header>
+    <section class="s_2">
+        <form action="{{url_for('index')}}" method="POST">
+            <input type="text" placeholder="Artists" name="search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </section>
+    <section class="s_3">
+        {% if songs  %}
+        {% for i in songs['items'] %}
+        <div class="d_0">
+            <a href="{{i['external_urls']['spotify']}}">
+                <div class="d_1">
+                    <img src="{{i['images'][0]['url']}}" alt="">
+                </div>
+                <div class="d_2">
+                    <b>{{i['name']}}</b>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+        {% endif %}
+    </section>
+</body>
+</html>

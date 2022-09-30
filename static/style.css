@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    /* background-image: url(./images/Music-girl-anime-musica.jpg); */
+    background-color: black;
+}
+header{
+    background-color: black;
+}
+img{
+    width: 100%;
+}
+.h_1{
+    width: 120px;
+}
+.h_2{
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    padding: 10px 20px;
+    color: white;
+}
+.h_2 i{
+    padding-top: 3px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.s_1{
+    display: flex;
+    padding: 10px 20px;
+    background-color: white;
+    gap: 40px;
+    justify-content: end;
+}
+.s_1 a{
+    color: black;
+}
+.s_2{
+    padding: 100px 250px;
+    background-color: rgb(98, 99, 100);
+}
+.s_2 input{
+    padding: 10px;
+}
+.s_2 i{
+    font-size: 16px;
+}
+.s_2 button{
+    padding: 10px;
+}
+.s_2 select{
+    padding: 10px;   
+}
+.s_3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.d_0{
+    margin: 50px;  
+    position: relative;  
+}
+.s_3 a{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px red;
+}
+.d_2{
+    position: absolute;
+    bottom: 15px;
+    background-color: black;
+    width: fit-content;
+    opacity: 0.5;
+}
+.d_1{
+    opacity: 0.9;
+}
+.profile img{
+    width: 30px;
+    border-radius: 50%;
+}
