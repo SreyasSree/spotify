@@ -16,7 +16,7 @@ client_secret = "ed6a41452f9842d886eb97e6ff0795c0"
 
 # webbrowser.open("https://accounts.spotify.com/authorize?" + urlencode(auth_headers))
 
-code = "AQAbN0FJ4pZJs_sfR8dfdKpddsPIs7zTPD2pFfPs7BnEyGWG6ACzBcoT_SccQMiH6cfAgkkXb-dh0MmPf_k5WzBbDwMD1ZXck6Z5VZdfLkz_QzP3i15sxqK6eZFS-IsgZL9fFPybI457obqU4_gDxz2vj7BD3R6e0cD-KdgoGqveWGaM3cly8etUK2r9AtXWORSJWk0"
+code = "AQC7a89JvuA0KRhWnE5eBTZW17jZAePI6EjEJflQfLyz5eG1YRh7aCAB7Qg0pGdCKkjZXVQiexJHYDTbZsn5kYdYczIe6up308Tsa5V5fVFvnkXKKY3uv-JOoRCigpHXKmamDiOtXL5EpRG0fVuebLHiUpQPcXn-qkJvrjrvabyRcSoQ1mk0T7YQXXgjDI7TJOln548"
 
 encoded_credentials = base64.b64encode(client_id.encode() + b':' + client_secret.encode()).decode("utf-8")
 

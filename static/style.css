@@ -44,7 +44,8 @@ header{
     color: black;
 }
 .s_2{
-    padding: 100px 250px;
+    padding: 100px 0;
+    padding-left: 50px;
     background-color: rgb(98, 99, 100);
 }
 .s_2 input{
@@ -61,12 +62,13 @@ header{
 }
 .s_3{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(6,1fr);
     gap: 30px;
 }
 .d_0{
     margin: 50px;  
-    position: relative;  
+    position: relative; 
+    grid-column: span 2; 
 }
 .s_3 a{
     color: rgb(255, 255, 255);
@@ -85,4 +87,17 @@ header{
 .profile img{
     width: 30px;
     border-radius: 50%;
+}
+
+
+
+@media screen and (max-width:1000px){
+    .d_0{
+        grid-column: span 3;
+    }
+}
+@media screen and (max-width:600px){
+    .d_0{
+        grid-column: span 6;
+    }
 }
